@@ -1,4 +1,4 @@
-package com.abstractt.demo;
+package day3_abstract_classes_collections.abstractt.demo;
 
 interface Printable{
     void print();

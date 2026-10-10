@@ -1,4 +1,4 @@
-package com.collections.practise;;
+package day3_abstract_classes_collections.collections.practise;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,13 +14,13 @@ public class Collectionss {
 
         System.out.println("size"+numbers.size());
         System.out.println(numbers);
-        System.out.println("is_contain"+numbers.contain(20));
-        System.out.println("is_contain"+numbers.contain(80));
+        System.out.println("is_contain"+numbers.contains(20));
+        System.out.println("is_contain"+numbers.contains(80));
 
     numbers.set(2,40);
     numbers.set(3,30);
 
-  numbers.stream().filer(n->n<40).forEach(n-> System.out.println(""+n));
+  numbers.stream().filter(n->n<40).forEach(n-> System.out.println(""+n));
         List <Integer> expected = List.of(
                 10, 20, 40, 30, 50, 60, 70, 80, 90, 100
         );

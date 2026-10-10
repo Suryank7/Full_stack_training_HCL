@@ -1,4 +1,6 @@
-package OOPS;
+package day1_basics;
+
+import day2_OOPS.A;
 
 public class Demo {
 
@@ -21,6 +23,6 @@ class Student {
 class Constructor {
 
     public static void main(String[] args) {
-
+        System.out.println("Constructor demo execution");
     }
 }
