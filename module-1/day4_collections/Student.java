@@ -16,6 +16,14 @@ public class Student implements Comparable<Student>{
         this.age = age;
     }
 
+    //custom comparator implementation
+    static class MyComparator implements Comparator<Student> {
+        @Override
+        public int compare(Student s1, Student s2) {
+            return Integer.compare(s1.rollno, s2.rollno);
+        }
+    }
+
     @Override
     public String toString() {
         return "Name: " + name +
@@ -50,7 +58,7 @@ public class Student implements Comparable<Student>{
 
         System.out.println("Before Sorting:");
         a.forEach(System.out::println);
-        Collections.sort(a);
+        Collections.sort(a,new MyComparator());
         System.out.println("AfterSorting:");
         a.forEach(System.out::println);
     }
