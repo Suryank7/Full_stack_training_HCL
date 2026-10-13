@@ -1,4 +1,4 @@
-package day_5;
+package day_5_functional_interface;
 
 import java.util.ArrayList;
 import java.util.*;

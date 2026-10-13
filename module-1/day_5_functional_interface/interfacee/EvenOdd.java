@@ -1,4 +1,4 @@
-package day_5.interfacee;
+package day_5_functional_interface.interfacee;
 
 @FunctionalInterface
 interface evodd{
