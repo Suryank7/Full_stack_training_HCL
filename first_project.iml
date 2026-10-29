@@ -5,6 +5,9 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/module-1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/module-2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/module-2_springboot/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-streams-assignment/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/module-2_springboot/hrmsdatabse/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

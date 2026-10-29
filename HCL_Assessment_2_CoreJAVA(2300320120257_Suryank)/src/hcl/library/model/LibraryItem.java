@@ -1,8 +1,9 @@
 package hcl.library.model;
 
-import hcl.library.Borrowable;
-
 import java.time.Year;
+import java.util.Objects;
+
+import hcl.library.Borrowable;
 
 public abstract class LibraryItem implements Borrowable {
     private static int nextId = 1001;
@@ -26,6 +27,12 @@ public abstract class LibraryItem implements Borrowable {
     }
 
     public abstract double lateFee(int daysLate);
+
+    protected void validateDaysLate(int daysLate) {
+        if (daysLate < 0) {
+            throw new IllegalArgumentException("Days late cannot be negative");
+        }
+    }
 
     public int getId() {
         return id;
@@ -62,5 +69,22 @@ public abstract class LibraryItem implements Borrowable {
                 .append(", year=").append(year)
                 .append(", available=").append(available)
                 .toString();
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof LibraryItem)) {
+            return false;
+        }
+        LibraryItem that = (LibraryItem) other;
+        return id == that.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

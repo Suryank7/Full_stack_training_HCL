@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module-2_springboot/SpringCoreFundamentals" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module-2_springboot/hrmsdatabse" vcs="Git" />
   </component>
 </project>

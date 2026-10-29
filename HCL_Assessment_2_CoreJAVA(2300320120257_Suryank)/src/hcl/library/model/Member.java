@@ -14,6 +14,9 @@ public class Member {
     }
 
     public Member(int id, String name, String email, List<LibraryItem> borrowedItems) {
+        if (name == null || name.isBlank()) {
+            throw new IllegalArgumentException("Name must not be blank");
+        }
         if (email == null || !email.contains("@")) {
             throw new IllegalArgumentException("Email must contain @");
         }
@@ -38,6 +41,14 @@ public class Member {
 
     public List<LibraryItem> getBorrowedItems() {
         return new ArrayList<>(borrowedItems);
+    }
+
+    public void borrowItem(LibraryItem item) {
+        borrowedItems.add(item);
+    }
+
+    public void returnItem(LibraryItem item) {
+        borrowedItems.remove(item);
     }
 
     @Override
