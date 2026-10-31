@@ -1,4 +1,4 @@
-package com.hcl2.jwtdemo;
+package com.hcld2.jwtdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,4 +9,5 @@ public class JwtdemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(JwtdemoApplication.class, args);
 	}
+
 }
